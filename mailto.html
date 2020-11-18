@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS | Contact me- emailing</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="./css/mailto.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+        <a href="./index.html" class="logo">허지연</a>
+        <p>기본에 충실한 컴퓨터강사/웹퍼블리셔가<br> 되도록 노력하겠습니다.!</p>
+    </div>
+
+    <div class="right">
+      <div class="content">
+        <h2>메일 보내기</h2>
+        <form class="gform"
+        method="POST" 
+        data-email="example@email.net" 
+        action="https://script.google.com/macros/s/AKfycbyHVUkfvgbzUnHLWHV-UWZD_pvlLLFT_ZQnPADszA/exec">
+          <label for="name">이름</label>
+          <input type="text" id="name" name="name" placeholder="이름">
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email" placeholder="이메일">
+          <label for="message">내용</label>
+          <textarea 
+          name="message" 
+          id="message" 
+          cols="30" 
+          rows="10" 
+          placeholder="내용"></textarea>
+
+          <button type="submit" class="btn">보내기</button><!--input옆에 보내기는 button을 활용 -->
+        </form>
+      </div>
+    </div>
+
+    <!-- dim -->
+    <div class="dimm">
+     <i class="xi-spinner-5 xi-spin"></i>
+       </div>
+      <!-- modal 키보드 windowkey+ .(점) 하면 이모티콘 이미지 나옴-->
+      <div class="modal">
+        <span>😍</span>  
+        <p>메일이 성공적으로 발송되었습니다.<br> 빠른 답장드리겠습니다. 감사합니다!^^</p>
+        <button class="btn close">닫기</button>
+      </div>
+  </div>
+
+  <script src="./js/mailto.js"></script>
+</body>
+</html>

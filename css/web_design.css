@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --primary: #111111;
+  --accent: #eb5757;
+  --accent2: #bde7e7;
+  --gray-dark: #2d3436;
+  --gray-mid: #b2bec3;
+  --gray-light: #eeeeee;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .webd_title {
+  height: 300px;
+} */
+
+.nav a.on {
+  font-weight: 700;
+  /* border-bottom: 2px solid var(--gray-dark); */
+}
+
+.webd_title h3 {
+  font-size: 50px;
+  font-weight: 700;
+  /* color: var(--gray-dark); */
+  text-align: center;
+  margin-top: 210px;
+  margin-bottom: 80px;
+}
+
+.webd_title .webd_t1 {
+  font-size: 25px;
+  color: var(--gray-dark);
+  text-align: center;
+  margin-bottom: 140px;
+}
+
+/* filter_btn 버튼 */
+
+#btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  /* background: red; */
+  margin-bottom: 60px;
+}
+
+/* #btns div {
+  background: red;
+} */
+
+.filter_btn {
+  width: 140px;
+  height: 40px;
+  font-size: 18px;
+  margin: 0 10px;
+  border: 1px solid var(--gray-mid);
+  border-radius: 5px;
+  outline: none;
+  transition: font-weight 0.3s, border 0.1s;
+  cursor: pointer;
+}
+.filter_btn:hover {
+  font-weight: 700;
+  color: var(--accent);
+  border: 2px solid var(--gray-mid);
+  /* border: 2px solid var(--accent); */
+}
+.filter_btn.press {
+  font-weight: 700;
+  background: var(--gray-mid);
+  border: 2px solid var(--gray-mid);
+}
+/* 
+.works {
+  display: flex;
+  align-items: start;
+  위쪽라인을 기준으로 flex정렬함
+  justify-content: space-between;
+  flex-wrap: wrap;
+} */
+
+/* .works img {
+  width: 25%;
+  height: 100%;
+  max-width: 380px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-bottom: 40px;
+} */
+
+/* grid 정렬 */
+.grid-sizer,
+.grid-item {
+  width: 22.73%;
+  margin: 15px;
+}
+
+.grid-item {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* 팝업된 그림의 배경색과 title css 지정 */
+.mfp-bg {
+  background: #000;
+  opacity: 0.86;
+}
+
+.mfp-title {
+  padding: 20px 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+.up_arrow img {
+  position: fixed;
+  bottom: 0;
+  right: -35px;
+  width: 40px;
+  height: 40px;
+  margin: 50px;
+  cursor: pointer;
+  /* filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.6)); */
+}
+
+.up_arrow img:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.space {
+  height: 150px;
+}

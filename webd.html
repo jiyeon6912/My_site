@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HJY web_design</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="./js/magnific-popup.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- 그리드 이미지 자율정렬을 위해서는 위의 isotope 와 imagesloaded 두개의 플러그인 필요함. -->
+    <!-- sub메뉴에서는 배너슬라이드가 필요없으므로 slick 플러그인은 삭제함. -->
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/sticky.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/web_design.css">
+  <!-- <script src="./js/jquery-3.5.1.js"></script> -->
+</head>
+
+<body>
+  <div class="wrap">
+    <a name="webd_top"></a>
+    <!-- 상단메뉴 header -->
+    <div class="header">
+      <!-- <a href="./index.html" class="logo"><img src="./images/logo.svg" alt="허지연 로고"></a> -->
+      <a href="./index.html" class="logo">허지연</a>
+      <ul class="nav">
+        <li><a href="./webd.html" class="on">웹디자인</a></li>
+        <li><a href="./webc.html">웹코딩</a></li>
+      </ul>
+    </div>
+    <!-- 상단메뉴 header end -->
+
+    <div class="container">
+  
+      <!-- 웹디자인 제목 및 작품설명 -->
+      <div class="webd_title">
+
+      <h3>웹디자인</h3>
+      <p class="webd_t1">포토샵(Photoshop), 일러스트(illustration), 피그마(Figma) 툴을 활용하여 만든 작품입니다.</p>
+
+      <div id="btns">
+        <!-- <a href="./webd_1.html"><button class="press">모두보기</button></a>
+        <a href="./webd_2.html"> <button>배너</button></a>
+        <a href="./webd_3.html"> <button>모바일앱</button></a>
+        <a href="./webd_4.html"><button>웹페이지</button></a>         -->
+
+       <button data-filter="*" class="filter_btn press">모두보기</button>
+       <button data-filter=".banner" class="filter_btn ">배너</button>
+       <button data-filter=".app" class="filter_btn ">모바일앱</button>
+       <button data-filter=".web" class="filter_btn ">웹페이지</button>
+      </div>
+    </div>
+
+      <div class="grid">
+        <div class="grid-sizer"></div> <!-- grid size 지정을 위해 빈 div클래스 필요함. -->
+        <a class="grid-item banner" href="./images/banner_01.jpg" title="배너">
+          <img src="./images/banner_01.jpg" alt="배너이미지" />
+        </a>
+        <a class="grid-item banner" href="./images/banner_02.jpg" title="배너">
+          <img src="./images/banner_02.jpg" alt="배너이미지" />
+        </a>
+        <a class="grid-item banner" href="./images/banner_03.jpg" title="배너">
+          <img src="./images/banner_03.jpg" alt="배너이미지" />
+        </a>
+        <a class="grid-item banner" href="./images/banner_04.jpg" title="배너">
+          <img src="./images/banner_04.jpg" alt="배너이미지" />
+        </a>
+        <a class="grid-item banner" href="./images/banner_05.jpg" title="배너">
+          <img src="./images/banner_05.jpg" alt="배너이미지" />
+        </a>
+        <a class="grid-item banner" href="./images/banner_06.jpg" title="배너">
+          <img src="./images/banner_06.jpg" alt="배너이미지" />
+        </a>
+        <a class="grid-item banner" href="./images/banner_07.jpg" title="배너">
+          <img src="./images/banner_07.jpg" alt="배너이미지" />
+        </a>
+        <a class="grid-item banner" href="./images/banner_08.jpg" title="배너">
+          <img src="./images/banner_08.jpg" alt="배너이미지" />
+        </a>
+        <a class="grid-item banner" href="./images/banner_09.jpg" title="배너">
+          <img src="./images/banner_09.jpg" alt="배너이미지" />
+        </a>
+        <a class="grid-item banner" href="./images/banner_10.jpg" title="배너">
+          <img src="./images/banner_10.jpg" alt="배너이미지" />
+        </a>
+        <a class="grid-item banner" href="./images/banner_11.jpg" title="배너">
+          <img src="./images/banner_11.jpg" alt="배너이미지" />
+        </a>
+        <a class="grid-item banner" href="./images/banner_12.jpg" title="배너">
+          <img src="./images/banner_12.jpg" alt="배너이미지" />
+        </a>
+        <a class="grid-item banner" href="./images/banner_13.jpg" title="배너">
+          <img src="./images/banner_13.jpg" alt="배너이미지" />
+        </a>
+        <a class="grid-item banner" href="./images/banner_14.jpg" title="배너">
+          <img src="./images/banner_14.jpg" alt="배너이미지" />
+        </a>
+        <a class="grid-item app" href="./images/thapp_01.jpg" title="모바일앱 디자인">
+          <img src="./images/thapp_01.jpg" alt="모바일앱이미지" />
+        </a>
+        <a class="grid-item app" href="./images/thapp_02.jpg" title="모바일앱 디자인">
+          <img src="./images/thapp_02.jpg" alt="모바일앱이미지" />
+        </a>
+        <a class="grid-item app" href="./images/thapp_03.jpg" title="모바일앱 디자인">
+          <img src="./images/thapp_03.jpg" alt="모바일앱이미지" />
+        </a>
+        <a class="grid-item app" href="./images/thapp_sign_01.jpg" title="모바일앱 회원가입">
+          <img src="./images/thapp_sign_01.jpg" alt="모바일앱이미지" />
+        </a>
+        <a class="grid-item app" href="./images/thapp_sign_02.jpg" title="모바일앱 회원가입">
+          <img src="./images/thapp_sign_02.jpg" alt="모바일앱이미지" />
+        </a>
+        <a class="grid-item app" href="./images/thapp_sign_03.jpg" title="모바일앱 회원가입">
+          <img src="./images/thapp_sign_03.jpg" alt="모바일앱이미지" />
+        </a>
+        <a class="grid-item app" href="./images/thapp_sign_04.jpg" title="모바일앱 회원가입">
+          <img src="./images/thapp_sign_04.jpg" alt="모바일앱이미지" />
+        </a>
+        <a class="grid-item app" href="./images/thapp_sign_05.jpg" title="모바일앱 회원가입">
+          <img src="./images/thapp_sign_05.jpg" alt="모바일앱이미지" />
+        </a>
+        <a class="grid-item app" href="./images/app_sign_06.jpg" title="모바일앱 회원가입">
+          <img src="./images/app_sign_06.jpg" alt="모바일앱이미지" />
+        </a>
+        <a class="grid-item app" href="./images/app_sign_07.jpg" title="모바일앱 회원가입">
+          <img src="./images/app_sign_07.jpg" alt="모바일앱이미지" />
+        </a>
+        <a class="grid-item web" href="./images/web_sign_01.jpg" title="웹 회원가입 페이지">
+          <img src="./images/web_sign_01.jpg" alt="웹회원가입이미지" />
+        </a>
+        <a class="grid-item web" href="./images/web_sign_02.jpg" title="웹 회원가입 페이지">
+          <img src="./images/web_sign_02.jpg" alt="웹회원가입이미지" />
+        </a>
+        <a class="grid-item web" href="./images/web_sign_03.jpg" title="웹 회원가입 페이지">
+          <img src="./images/web_sign_03.jpg" alt="웹회원가입이미지" />
+        </a>
+        <a class="grid-item web" href="./images/web_sign_04.jpg" title="웹 회원가입 페이지">
+          <img src="./images/web_sign_04.jpg" alt="웹회원가입이미지" />
+        </a>
+        <a class="grid-item web" href="./images/ev_web_01.jpg" title="웹이벤트 페이지">
+          <img src="./images/ev_web_01.jpg" alt="웹이벤트이미지" />
+        </a>
+        <a class="grid-item web" href="./images/ev_web_02.jpg" title="웹이벤트 페이지">
+          <img src="./images/ev_web_02.jpg" alt="웹이벤트이미지" />
+        </a>
+        <a class="grid-item web" href="./images/ev_web_03.jpg" title="웹이벤트 페이지">
+          <img src="./images/ev_web_03.jpg" alt="웹이벤트이미지" />
+        </a>
+        <a class="grid-item web" href="./images/ev_web_04.jpg" title="웹이벤트 페이지">
+          <img src="./images/ev_web_04.jpg" alt="웹이벤트이미지" />
+        </a>
+        <a class="grid-item web" href="./images/web_01.jpg" title="웹페이지 디자인">
+          <img src="./images/web_01.jpg" alt="웹페이지이미지" />
+        </a>
+        <a class="grid-item web" href="./images/web_02.jpg" title="웹페이지 디자인">
+          <img src="./images/web_02.jpg" alt="웹페이지이미지" />
+        </a>
+        <a class="grid-item web" href="./images/web_03.jpg" title="웹페이지 디자인">
+          <img src="./images/web_03.jpg" alt="웹페이지이미지" />
+        </a>
+        <a class="grid-item web" href="./images/web_04.jpg" title="웹페이지 디자인">
+          <img src="./images/web_04.jpg" alt="웹페이지이미지" />
+        </a>        
+      </div> <!-- works div 닫기 -->
+  
+      <div class="space"></div>
+        <a href="#webd_top"><span class="up_arrow"><img src="./images/up_arrow.png" alt="위쪽화살표">
+        </span></a>
+    </div>
+  </div> <!-- grid div 닫기 -->
+  
+  <script>
+    // magnific-Popup을 위해서 필요한 스크립트를 삽입해야함. js폴더에 magnific 관련 2개의 파일이 저장되어 있어야 함.
+    $('.grid-item').magnificPopup({
+      type: 'image',
+      closeOnContentClick: true,
+      image: {
+        verticalFit: false
+      }
+    })
+
+    // init Isotope
+    var $grid = $('.grid').isotope({
+      itemSelector: '.grid-item',
+      percentPosition: true,
+      masonry: {
+        columnWidth: '.grid-sizer'
+      }
+    })
+    // layout Isotope after each image loads
+    $grid.imagesLoaded().progress(function () {
+      $grid.isotope('layout')
+    })
+
+    // bind filter button click :버튼 클릭 필터링
+   $('#btns').on( 'click', 'button', function() {
+    var filterValue = $( this ).attr('data-filter');
+    // use filterFn if matches value
+    // filterValue = filterFns[ filterValue ] || filterValue; 조건검사 if문
+    $grid.isotope({ filter: filterValue });
+
+    var btns = $('#btns').find('button') //버튼 클릭시 버튼에 색지정하는 코드
+    btns.removeClass('press')
+    $(this).addClass('press')
+  });
+  </script>
+
+</body>
+</html>
