@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
 
 :root {
   --primary: #111111;
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: var(--primary);
@@ -67,7 +67,7 @@ a {
   font-size: 18px;
   margin: 0 10px;
   border: 1px solid var(--gray-mid);
-  border-radius: 5px;
+  border-radius: 2px;
   outline: none;
   transition: font-weight 0.3s, border 0.1s;
   cursor: pointer;
@@ -79,6 +79,7 @@ a {
   /* border: 2px solid var(--accent); */
 }
 .filter_btn.press {
+  /* color: #fff; */
   font-weight: 700;
   background: var(--gray-mid);
   border: 2px solid var(--gray-mid);
@@ -111,7 +112,7 @@ a {
 .grid-item {
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* 팝업된 그림의 배경색과 title css 지정 */

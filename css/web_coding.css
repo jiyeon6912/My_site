@@ -91,6 +91,8 @@
   width: 580px;
   height: 600px;
   overflow: hidden;
+  /* border: 1px solid var(--gray-mid); */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ----사이트바로가기,코드보기 버튼---- */
