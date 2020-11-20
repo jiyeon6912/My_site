@@ -129,13 +129,13 @@ html {
   font-size: 60px;
   font-weight: 400;
   line-height: 1.4;
-  animation: ani_blink 3s infinite;
+  animation: ani_blink 5s infinite;
 }
 
 .front_text p .bold {
   opacity: 0.5;
   font-weight: 500;
-  animation: ani_blink 5s infinite;
+  animation: ani_blink 7s infinite;
 }
 
 .front_text p .light {
