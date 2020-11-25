@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
 
 :root {
   --primary: #bebed8;
@@ -14,14 +14,15 @@
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   /* font-family: 'Roboto', sans-serif; */
   background: linear-gradient(
     90deg,
     rgba(8, 9, 37, 0.9) 0%,
     rgba(17, 24, 85, 0.9) 100%
   );
-  color: var(--primary);
+  /* color: var(--primary); */
+  color: var(--gray-mid);
   font-size: 16px;
   font-weight: 400;
 }
@@ -36,6 +37,10 @@ a {
   height: 100vh;
 }
 
+.header i {
+  font-size: 36px;
+  color: var(--light);
+}
 /* 배너 섹션 */
 
 .banner {
@@ -52,7 +57,7 @@ a {
 
 .banner_text img {
   position: absolute;
-  top: 0;
+  top: -5%;
   left: 20%;
   width: 25px;
   height: 25px;
@@ -73,7 +78,7 @@ a {
 .banner_text p {
   font-size: 22px;
   opacity: 0;
-  color: var(--primary);
+  color: var(--dark);
   padding-top: 20px;
   animation: ani_scale 1.5s 1.5s forwards;
 }
@@ -107,7 +112,7 @@ a {
 }
 
 .mouse::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 12px;
   left: 50%;
@@ -119,7 +124,7 @@ a {
 }
 
 .mouse::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -14px;
   left: 6.8px;
@@ -243,26 +248,26 @@ a {
 
 .info p {
   font-size: 18px;
-  margin: 30px 0 10px;
-  line-height: 1.4;
+  margin: 20px 0 10px;
+  line-height: 1.8;
 }
 
-.info .contact {
+/* .info .contact {
   display: flex;
-}
+} */
 
-.info .contact a {
+/* .info .contact a {
   display: flex;
   align-items: center;
   margin-right: 30px;
   letter-spacing: 2px;
-}
-
+} */
+/* 
 .info .contact i {
   font-size: 26px;
   color: var(--light);
   margin-right: 10px;
-}
+} */
 
 .photo {
   border-radius: 12px;
@@ -272,7 +277,8 @@ a {
 /* ----사이트바로가기,코드보기 버튼---- */
 
 .code_btns {
-  margin-top: 30px;
+  padding-top: 50px;
+  box-sizing: border-box;
 }
 
 .code_btns button {
@@ -280,19 +286,20 @@ a {
   height: 45px;
   font-size: 18px;
   font-weight: 500;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   margin-right: 20px;
-  border: 1px solid var(--gray-mid);
+  /* border: 1px solid var(--gray-mid); */
   border-radius: 5px;
   outline: none;
-  transition: font-weight 0.3s, border 0.1s;
+  border: none;
+  transition: font-weight 0.5s;
   cursor: pointer;
 }
 
 .code_btns button:hover {
   font-weight: 700;
   /* color: var(--accent); */
-  border: 2px solid var(--gray-mid);
+  /* border: 2px solid var(--gray-mid); */
   /* border: 2px solid var(--accent); */
 }
 /* ----사이트바로가기,코드보기 버튼 end---- */
