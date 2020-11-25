@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HJY web_coding</title>
   <link rel="stylesheet" href="./css/reset.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script> <!-- fullpage 플러그인을 위한 script -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/web_design.css">
   <link rel="stylesheet" href="./css/web_coding.css">
@@ -41,6 +45,7 @@
      </div>    
     <!-- 웹코딩 banner end-->
 
+     <section id="fullpage">
 
     <div class="container">
 
@@ -110,13 +115,35 @@
             </div>
         </div>
       </div>
+    </section>
+  </div>
+
       <div class="space"></div>
         <a href="#webd_top"><span class="up_arrow"><img src="./images/up_arrow.png" alt="위쪽화살표">
         </span></a>
        
-    </div>
 
+    
+ 
   </div> <!-- wrap div 닫기 -->
+  <script>
+      // 풀페이지
+      $('#fullpage').fullpage({
+		//options here
+		// autoScrolling:true,
+    // scrollHorizontally: true
+    // navigation: true,
+    // menu: '#nav',
+    // anchors:['page1', 'page2','page3','page4'],
+    responsive: 900, //반응형이 되었을때는 풀페이지 옵션을 적용시키지 않음.
+    onLeave: function(){
+      $('.line').removeClass('active')
+    }, //사용자가 구역을 떠나고 새로운 구역으로 이동하는 와중에 콜백이 실행됩니다.
+	  afterLoad: function(){
+      $('.line').addClass('active')
+    } //구역을 불러오고 나서 스크롤이 끝나면 콜백이 실행됩니다.
+	});
+  </script>
   <script src="./js/sticky.js"></script>
 </body>
 </html>

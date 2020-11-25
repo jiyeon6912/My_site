@@ -7,140 +7,55 @@
   --gray-light: #eeeeee;
 }
 
-.webc_banner {
+/* .webc_banner {
   height: 600px;
   background: var(--accent2);
-}
-
-.banner_text {
-  padding-top: 200px;
-  line-height: 2;
-  text-align: center;
-}
-
-.banner_text img {
-  width: 25px;
-  height: 25px;
-  margin-left: 27%;
-  opacity: 0;
-  transform: rotate(180deg);
-  animation: ani_rotate 0.5s 0.8s forwards;
-}
-
-.banner_text h2 {
-  font-size: 40px;
-  opacity: 0;
-  font-weight: 500;
-  animation: ani_scale 1.5s forwards;
-}
-
-.banner_text p {
-  font-size: 20px;
-  opacity: 0;
-  color: var(--gray-dark);
-  padding-top: 20px;
-  animation: ani_scale 1.5s 1.5s forwards;
-}
-
-.banner_text span {
-  font-size: 16px;
-  /* padding-left: 5px; */
-}
+} */
 
 .webc_1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 900px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* height: 900px; */
   /* background: red; */
-  padding: 0 120px;
-  border-bottom: 1px solid var(--gray-mid);
+  /* padding: 0 120px; */
+  /* border-bottom: 1px solid var(--gray-mid); */
 }
 
 /* 원하는 부분만 이미지 보이게 하는 방법 알아보기 */
 
 .webc_1 .text {
   /* background: #fff; */
-  align-items: start;
-  width: 580px;
-  justify-content: center;
-  flex-direction: column;
-  color: var(--gray-dark);
+  /* align-items: start; */
+  /* width: 580px; */
+  /* justify-content: center; */
+  /* flex-direction: column; */
+  /* color: var(--gray-dark); */
 }
 .webc_1 .text h3 {
-  font-size: 55px;
+  /* font-size: 55px; */
   /* margin: 20px 0; */
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .webc_1 .text p {
-  font-size: 22px;
-  margin: 30px 0;
+  /* font-size: 22px; */
+  /* margin: 30px 0; */
   /* margin-top: 20px;
   margin-bottom: 30px; */
-  line-height: 1.7;
+  /* line-height: 1.7; */
 }
 .webc_1 .text .bold {
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .webc_1 .text .sub_1 {
 }
 
 .webc_1 img {
-  width: 580px;
-  height: 600px;
-  overflow: hidden;
+  /* width: 580px; */
+  /* height: 600px; */
+  /* overflow: hidden; */
   /* border: 1px solid var(--gray-mid); */
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* ----사이트바로가기,코드보기 버튼---- */
-
-.code_btns {
-}
-
-.code_btns button {
-  width: 200px;
-  height: 50px;
-  font-size: 18px;
-  margin-top: 30px;
-  margin-right: 20px;
-  border: 1px solid var(--gray-mid);
-  border-radius: 5px;
-  outline: none;
-  transition: font-weight 0.3s, border 0.1s;
-  cursor: pointer;
-}
-
-.code_btns button:hover {
-  font-weight: 700;
-  /* color: var(--accent); */
-  border: 2px solid var(--gray-mid);
-  /* border: 2px solid var(--accent); */
-}
-/* ----사이트바로가기,코드보기 버튼 end---- */
-
-/* animation */
-@keyframes ani_scale {
-  0% {
-    transform: scale(2); /*animation 시작할때*/
-    opacity: 0;
-  }
-
-  100% {
-    transform: scale(1); /*animation 시작할때 scale의 기본은 1*/
-    opacity: 1;
-  }
-}
-
-@keyframes ani_rotate {
-  0% {
-    opacity: 0;
-    transform: rotate(180deg);
-  }
-  100% {
-    opacity: 1;
-    transform: rotate(0deg);
-  }
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); */
 }
