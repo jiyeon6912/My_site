@@ -21,7 +21,10 @@
 
 <body>
   <div class="wrap">
-    <a name="webd_top"></a>
+     <!-- 탑 버튼 -->
+     <div class="go_top"><i class="xi-arrow-up"></i></div>
+
+    <!-- <a name="webd_top"></a> -->
     <!-- 상단메뉴 header -->
     <div class="header">
       <!-- <a href="./index.html" class="logo"><img src="./images/logo.svg" alt="허지연 로고"></a> -->
@@ -191,8 +194,8 @@
       </div> <!-- works div 닫기 -->
   
       <div class="space"></div>
-        <a href="#webd_top"><span class="up_arrow"><img src="./images/up_arrow.png" alt="위쪽화살표">
-        </span></a>
+        <!-- <a href="#webd_top"><span class="up_arrow"><img src="./images/up_arrow.png" alt="위쪽화살표"> -->
+        <!-- </span></a> -->
     </div>
   </div> <!-- grid div 닫기 -->
   
@@ -245,8 +248,26 @@
     content.eq(buttonIndex).show()
 
 // 버튼 클릭시 웹디자인 부연설명 바꾸기 end--------
-
   });
+
+  
+      //헤더 스크립트 go_top;스크롤 값 900초과일때 나타남
+      var goTop = $('.go_top')
+
+      $(window).scroll(function () {
+        var scrollTopValue = $(document).scrollTop()
+
+        if (scrollTopValue > 900) {
+          goTop.fadeIn()
+        } else {
+          goTop.fadeOut()
+        }
+      })
+
+      goTop.click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 400)
+      })
+      
   </script>
 
 </body>

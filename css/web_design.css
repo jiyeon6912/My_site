@@ -127,7 +127,7 @@ a {
   font-size: 20px;
   color: #fff;
 }
-
+/* 
 .up_arrow img {
   position: fixed;
   bottom: 0;
@@ -136,14 +136,32 @@ a {
   height: 40px;
   margin: 50px;
   cursor: pointer;
-  /* filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.6)); */
-}
-
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.6));
+} */
+/* 
 .up_arrow img:hover {
   -webkit-filter: invert(100%);
   filter: invert(100%);
-}
+} */
 
 .space {
   height: 150px;
+}
+
+.go_top {
+  position: fixed;
+  right: 7px;
+  bottom: 130px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gray-mid);
+  /* box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.5); */
+  font-size: 24px; /* i클래스 별도 지정하지 않아도 부모요소 상속받음 */
+  color: var(--font_dark); /* i클래스 별도 지정하지 않아도 부모요소 상속받음 */
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  display: none;
+  z-index: 10000;
 }
