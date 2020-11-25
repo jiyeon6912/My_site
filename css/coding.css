@@ -64,7 +64,7 @@ a {
   /* margin-left: 27%; */
   opacity: 0;
   transform: rotate(180deg);
-  animation: ani_rotate 0.5s 0.8s forwards;
+  animation: ani_rotate 1s 1s forwards;
 }
 
 .banner_text h2 {
