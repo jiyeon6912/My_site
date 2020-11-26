@@ -20,22 +20,46 @@
         <li><a href="./webd.html">웹디자인</a></li>
         <li><a href="./coding.html">웹코딩</a></li>
       </ul>
-    </div>
+    </div> <!-- header end -->
+    
 
-    <div class="front_text">
+    <!-- <div class="front_text">
       <p>
         <span class="bold">현장과소통하고</span><br>
         <span class="bold">학생과공감</span><span class="light">하는</span><br>
         <span class="light">컴퓨터강사/웹퍼블리셔<br>허지연입니다.</span>
-      </p>
+      </p> -->
+
+
+      <div class="front_text">
+        <div class="typing_txt">
+          <ul>
+            <li><span class="bold">현장과소통하고</span></li>
+            <li><span class="bold">학생과공감</span><span class="light">하는</span></li>
+            <li><span class="light">컴퓨터강사/웹퍼블리셔</span></li>
+            <li><span class="light">허지연입니다.</span></li>
+          </ul>
+   
+        </div>
+        
+      <div class="typing">
+         <ul>
+          <li><span class="bold"></span></li>
+          <li><span class="bold"></span><span class="light"></span></li>
+          <li><span class="light"></span></li>
+          <li><span class="light"></span></li>
+        </ul>
+      </div> 
+
+
       <!-- <span class="t1">현장과소통하고</span>
       <span class="t1"><br>학생과공감</span>
       <span class="t2">하는<br></span>
       <span class="t3">컴퓨터강사/웹퍼블리셔<br></span>
       <span class="t3">허지연입니다.<br></span> -->
       <span class="contact_btn">연락하기</span>
-    </div>
-  </div>
+    </div> <!-- front_text end -->
+  </div> <!-- front_page end -->
 
   <div class="contact_modal">
     <div class="inner">
@@ -100,8 +124,52 @@
    <span class="close_btn"><img src="./images/close_btn.png" alt="연락하기모달 닫기버튼"></span>
   </div>
 
-</div>
+</div> <!-- wrap end -->
   <script src="./js/modal.js"></script>
+  <script>
+    var typingBool = false; 
+    var typingIdx=0; 
+    var liIndex = 0;
+    var liLength = $(".typing_txt>ul>li").length;
+    
+    // 타이핑될 텍스트를 가져온다 
+    var typingTxt = $(".typing_txt>ul>li").eq(liIndex).text(); 
+    typingTxt=typingTxt.split(""); // 한글자씩 자른다. 
+    if(typingBool==false){ // 타이핑이 진행되지 않았다면 
+        typingBool=true; 
+        var tyInt = setInterval(typing,100); // 반복동작 
+    } 
+         
+    function typing(){ 
+      $(".typing ul li").removeClass("on");
+       $(".typing ul li").eq(liIndex).addClass("on");
+      if(typingIdx<typingTxt.length){ // 타이핑될 텍스트 길이만큼 반복 
+         $(".typing ul li").eq(liIndex).append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
+         typingIdx++; 
+       } else{ if(liIndex<liLength-1){
+         //다음문장으로  가기위해 인덱스를 1증가
+           liIndex++; 
+         //다음문장을 타이핑하기위한 셋팅
+            typingIdx=0;
+            typingBool = false; 
+            typingTxt = $(".typing_txt>ul>li").eq(liIndex).text(); 
+           
+         //다음문장 타이핑전 1초 쉰다
+             clearInterval(tyInt);
+              //타이핑종료
+         
+             setTimeout(function(){
+               //0.5초후에 다시 타이핑 반복 시작
+               tyInt = setInterval(typing,100);
+             },500);
+            } else if(liIndex==liLength-1){
+              
+             //마지막 문장까지 써지면 반복종료
+               clearInterval(tyInt);
+            }
+        } 
+    }  
+    </script>
   
 </body>
 </html>

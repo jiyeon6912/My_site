@@ -70,6 +70,13 @@ body {
   justify-content: center; /*가로기준 중앙정렬, 양쪽정렬*/
 }
 
+.right .content i {
+  font-size: 36px;
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+
 .right .content {
   display: flex;
   flex-direction: column;

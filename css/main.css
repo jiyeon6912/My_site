@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
 
 :root {
   --primary: #111111;
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: var(--primary);
@@ -113,34 +113,57 @@ img {
   border-bottom: 2px solid var(--gray-dark);
   font-weight: 700;
 }
+.typing_txt {
+  /* margin-left: 300px; */
+  /* padding-top: 230px; */
+  /* padding-left: 60px; */
+  /* margin-top: 60px; */
+  display: none;
+}
 
-.front_page .front_text {
+.typing {
   margin-left: 300px;
   padding-top: 230px;
   padding-left: 60px;
-  /* margin-top: 60px; */
 }
 
-.front_text.on {
+/* .typing_txt.on {
   pointer-events: none;
-}
+} */
 
-.front_text p {
+.typing_txt li,
+.typing li {
   font-size: 60px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.4;
   animation: ani_blink 5s infinite;
 }
 
-.front_text p .bold {
+.typing_txt li .bold,
+.typing li span .bold {
   opacity: 0.5;
   font-weight: 500;
-  animation: ani_blink 7s infinite;
+  /* animation: ani_blink 7s infinite; */
 }
 
-.front_text p .light {
+.typing_txt li .light,
+.typing > li > span .light {
   color: var(--gray-dark);
   font-size: 50px;
+}
+/* 글자 타이팅 */
+/* .typing-txt {
+  display: none;
+} */
+
+ul {
+  list-style: none;
+}
+.typing ul li {
+  display: block;
+}
+.typing ul li.on {
+  display: inline-block;
 }
 
 /* animation */
@@ -210,12 +233,14 @@ img {
 .contact_btn {
   display: inline-block;
   padding: 30px 130px;
+  box-sizing: border-box;
   background: #fff;
   border: 1px solid var(--gray-mid);
   font-size: 30px;
   letter-spacing: 2px;
   cursor: pointer;
   margin-top: 62px;
+  margin-left: 350px;
   border-radius: 10px;
   transition: color 0.3s, border 0.3s;
 }
